@@ -363,10 +363,11 @@
       position:fixed; top:64px; left:0; right:0; bottom:0;
       background:rgba(10,7,18,0.98); backdrop-filter:blur(10px);
       flex-direction:column; padding:32px 24px; gap:22px;
-      transform:translateX(100%); transition:transform .35s ease;
+      transform:translateX(100%); transition:transform .35s ease, visibility .35s;
       align-items:flex-start;
+      visibility:hidden; pointer-events:none;
     }
-    nav.links.open{transform:translateX(0);}
+    nav.links.open{transform:translateX(0); visibility:visible; pointer-events:auto;}
     nav.links a{font-size:1rem;}
     .menu-btn{display:block;}
     .hero{padding:40px 0 20px;}
@@ -374,4 +375,5 @@
     .reel-section{padding:64px 0 20px;}
     .about{padding:64px 0;}
     .contact{padding:64px 0 40px;}
-  }
+        }
+            
