@@ -17,7 +17,7 @@
   }
 
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; overflow-x:hidden;}
   body{
     margin:0;
     background:var(--ink);
@@ -25,6 +25,8 @@
     font-family:'General Sans','Helvetica Neue',Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
+    width:100%;
+    position:relative;
   }
   body::before{
     content:"";
@@ -375,5 +377,5 @@
     .reel-section{padding:64px 0 20px;}
     .about{padding:64px 0;}
     .contact{padding:64px 0 40px;}
-        }
-            
+}
+      
